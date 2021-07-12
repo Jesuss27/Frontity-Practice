@@ -1,13 +1,6 @@
-const Root = () => {
-  return (
-    <>
-      You can edit your package in:
-      <pre>packages\my-first-theme\src\index.js</pre>
-    </>
-  );
-};
+import Root from "./components/index"
 
-export default {
+const myFirstTheme = {
   name: "my-first-theme",
   roots: {
     theme: Root
@@ -17,5 +10,7 @@ export default {
   },
   actions: {
     theme: {}
-  }
-};
+    }
+  };
+
+export default myFirstTheme
